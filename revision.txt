@@ -1,0 +1,17 @@
+#1- base de donnee
+
+-dans le fichier index.php, charger l'autoloader
+
+- creer une classe pour se connecter a la base de donnee, basée sur le design pattern 'singleton' : c'est une classe qui s'instanciera une seule fois.
+
+-on cree un model general, qui se chargera de contenir toutes les methodes d'interaction avec la base de donnee que les autres utiliseront
+
+-dans le model, on definie une propriete pour le nom de la base de donnee. ça va etre une propriete  qu'on va ecrire deouis les classes qui vont heriter du model
+
+-on cree une instance de db pour se connecter 
+
+- on cree une methode 'requete' qui va interroger la base de donnee, decider si elle doit pour cela faire un requete preparée ou pas
+
+-on peut commencer avec les methodes du CRUD
+
+-on cree un model pour chaque table de la base de donnee
